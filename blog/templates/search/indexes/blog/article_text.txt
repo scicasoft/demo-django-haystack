@@ -2,5 +2,5 @@
 {{ object.auteur }}
 {{ object.categorie }}
 {{ object.contenu }}
-{% for tag in object.tags.all %}{{ tag }}{% endfor %}
+{% for tag in object.tags.all %}{{ tag }} {% endfor %}
 {% for commentaire in object.commentaires.all %}{{ commentaire.auteur.full_name }}{% endfor %}
